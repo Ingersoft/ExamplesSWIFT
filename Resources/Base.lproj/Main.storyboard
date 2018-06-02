@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Yy-z5-PAd">
-                                <rect key="frame" x="55" y="125" width="235" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="sliderPogress:" destination="BYZ-38-t0r" eventType="valueChanged" id="eEK-qg-P4r"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-dL-f6f">
                                 <rect key="frame" x="160" y="181" width="25" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -32,11 +25,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2Yy-z5-PAd">
+                                <rect key="frame" x="55" y="125" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderPogress:" destination="BYZ-38-t0r" eventType="valueChanged" id="eEK-qg-P4r"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Apple_Swift_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hHy-XR-SbJ">
+                                <rect key="frame" x="85" y="233" width="203" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2r9-AS-TGd">
+                                <rect key="frame" x="139" y="382" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rotate"/>
+                                <connections>
+                                    <action selector="rotateImave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dlI-im-Ug3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="hHy-XR-SbJ" id="m2K-yM-DlP"/>
                         <outlet property="labelControl" destination="GPS-dL-f6f" id="IIl-4V-PP6"/>
                         <outlet property="sliderControl" destination="2Yy-z5-PAd" id="IzV-wd-hvB"/>
                     </connections>
@@ -46,4 +59,7 @@
             <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Apple_Swift_Logo" width="256" height="256"/>
+    </resources>
 </document>

@@ -54,10 +54,10 @@
 		35C96C3F20C342A600968E88 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				35C96C4020C342A600968E88 /* AppDelegate.swift */,
 				35C96C4220C342A600968E88 /* ViewController.swift */,
-				35C96C4420C342A600968E88 /* Main.storyboard */,
 				35C96C4720C342A700968E88 /* Assets.xcassets */,
+				35C96C4420C342A600968E88 /* Main.storyboard */,
+				35C96C4020C342A600968E88 /* AppDelegate.swift */,
 				35C96C4920C342A700968E88 /* LaunchScreen.storyboard */,
 				35C96C4C20C342A700968E88 /* Info.plist */,
 			);
