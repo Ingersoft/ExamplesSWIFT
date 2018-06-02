@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sliderControl: UISlider!
+    @IBOutlet weak var labelControl: UILabel!
+    
+    @IBAction func sliderPogress(_ sender: UISlider) {
+    
+        let currentValue = Int(sender.value)
+        
+        labelControl.text = "\(currentValue)"
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
